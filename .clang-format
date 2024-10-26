@@ -1,0 +1,18 @@
+SortIncludes: false
+ColumnLimit: 0
+IndentWidth: 4
+IndentCaseLabels: True
+PointerAlignment: Left
+BreakBeforeBraces: Custom
+BraceWrapping:
+  BeforeElse : true
+BinPackArguments: True
+BinPackParameters: True
+AllowAllParametersOfDeclarationOnNextLine: True
+AllowShortBlocksOnASingleLine: Always
+AllowShortCaseLabelsOnASingleLine: True
+AllowShortEnumsOnASingleLine: True
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AllowShortLambdasOnASingleLine: All
+AllowShortLoopsOnASingleLine: True
