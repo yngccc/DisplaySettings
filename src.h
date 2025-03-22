@@ -127,25 +127,3 @@ void setHDR(bool enabled) {
         }
     }
 }
-
-int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd) {
-    int numArgs;
-    LPWSTR* args = CommandLineToArgvW(GetCommandLineW(), &numArgs);
-    if (numArgs == 3) {
-        if (!wcscmp(args[1], L"hdrOn")) {
-            setHDR(true);
-        }
-        else if (!wcscmp(args[1], L"hdrOff")) {
-            setHDR(false);
-        }
-        if (!wcscmp(args[2], L"native")) {
-            changeResolution(3440, 1440, 175);
-        }
-        else if (!wcscmp(args[2], L"dsr")) {
-            changeResolution(5160, 2160, 175);
-        }
-        else if (!wcscmp(args[2], L"1440")) {
-            changeResolution(2560, 1440, 175);
-        }
-    }
-}
